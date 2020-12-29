@@ -97,7 +97,7 @@ public class LotteryServiceImpl implements LotteryService {
         List<Integer> firstGroupNums = new ArrayList<>();
         List<Integer> secondGroupNums = new ArrayList<>();
         Map<String, List<Integer>> resultMap = new HashMap<>();
-        log.info("第一组 15选5 准备开奖");
+        log.info("第一组 35选5 准备开奖");
         int i = 1;
         while (firstGroupNums.size() < 5) {
             // 生成 [1,35]的整数 5个
@@ -109,7 +109,7 @@ public class LotteryServiceImpl implements LotteryService {
             }
         }
         log.info("第一组的中奖号码有:" + JSON.toJSONString(firstGroupNums));
-        log.info("第二组 6选2 准备开奖");
+        log.info("第二组 12选2 准备开奖");
         while (secondGroupNums.size() < 2) {
             // 生成 [1,12]的整数 2个
             int num = current.nextInt(1, 13);
