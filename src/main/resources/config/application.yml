@@ -1,0 +1,15 @@
+# 热部署
+spring:
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+#  profiles:
+#    active: local
+
+
+#logging:
+#  config: classpath:config/logback.xml
+
+
+
