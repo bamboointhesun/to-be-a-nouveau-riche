@@ -10,6 +10,7 @@ spring:
 
 #logging:
 #  config: classpath:config/logback.xml
-
+server:
+  port: 8081
 
 
